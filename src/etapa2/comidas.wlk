@@ -9,7 +9,7 @@ object mondongo {
 
 // comida que esta fallada
 object bigMac {
-	method energiaQueOtorga() { return 2 }
+	method energiaPorGramo() { return 2 }
 }
 
 /*
@@ -27,3 +27,31 @@ object sorgo {
 }
 
 // despues, agregar mijo y canelones
+object mijo{
+  var mojado=true
+  method mojarse(){mojado= true}
+  method secarse() {mojado=false}
+  method energiaPorGramo() {
+  	if (mojado) {return 15}
+  	else {return 20}
+  }
+  
+}
+
+object canelones {
+	var salsa=false
+	var queso = false
+	const energia=20
+	const plusSalsa=7
+	const plusQueso=5
+	method conSalsa() {salsa=true}
+	method conQueso() {queso=true}
+	method conSalsayQueso() {salsa=true queso=true}
+	method sinNada() {salsa=false queso=false}
+	method  energiaPorGramo() {
+		if (queso) {return energia + plusSalsa}
+		if (salsa) {return energia + plusQueso}
+		else {return energia}
+	}
+	
+}
