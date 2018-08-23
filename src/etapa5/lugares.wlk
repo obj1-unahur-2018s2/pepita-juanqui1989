@@ -1,13 +1,13 @@
 
-import pepita.*
+
  
  
 object patagonia {
 	
-	method lugar() {return 30}
+	method lugar(ave) {return 30}
 }
 object sierrasCordobesas {
-	method lugar() {return 70}
+	method lugar(ave) {return 70}
 }
 
 object marDelPlata {
@@ -33,6 +33,8 @@ object marDelPlata {
 
 object noroeste{
 	
-	method lugar(){return pepita.energia() * 0.10}
-	
+	//method lugar(){return pepita.energia() * 0.10}
+	method lugar(ave) {
+		return 0.1* ave.energia()
+	} 
 }
