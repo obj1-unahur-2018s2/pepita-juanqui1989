@@ -5,10 +5,10 @@ import masAves.*
 
 object roque {
 	var pupilo
-	method tuPupiloEs(ave) {pupilo=ave } 
+	method tuPupiloEs(ave) {pupilo=ave } // implementar
 	method entrenar() { 
 		pupilo.volar(10)
 		pupilo.comer(alpiste,300)
 		pupilo.volar(5)
-		pupilo.haceLoQueQuieras()}  
+		pupilo.haceLoQueQuieras()}  // implementar
 }
